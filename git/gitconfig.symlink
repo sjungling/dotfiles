@@ -1,0 +1,47 @@
+[user]
+	name = Scott Jungling
+	email = sjungling@csuchico.edu
+[apply]
+        whitespace = nowarn
+[alias]
+        co = checkout
+        st = status
+        ci = commit
+        br = branch
+        df = diff
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        mup = merge upstream/master
+        
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[merge]
+  tool = opendiff
+[format]
+[github]
+        user = sjungling
+        token = TOKEN
+[core]
+	quotepath = false
+	excludesfile = /Users/sjungling/.gitignore_global
+[difftool]
+	prompt = false
+[hub]
+	protocol = git
+	host = github.csuchico.edu
