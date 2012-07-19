@@ -1,0 +1,11 @@
+--ignore-dir=cache
+--ignore-dir=gems
+--type-set=sass=.sass
+--type-set=coffee=.coffee
+--type-set=xslt=.xsl
+--sort-files
+--color
+--context=1
+--follow
+--group
+# --all
