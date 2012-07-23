@@ -1,4 +1,4 @@
-alias gst='c;git status'
+alias gst='git status -sb'
 alias gx='gitx --all .'
 alias gl='git pull'
 alias gp='git gc;git push'

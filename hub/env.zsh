@@ -1,0 +1,1 @@
+export GITHUB_HOST="github.csuchico.edu"
