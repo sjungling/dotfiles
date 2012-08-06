@@ -10,8 +10,7 @@
   br = branch
   df = diff
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-  lol = log --graph --decorate --pretty=oneline --abbrev-commit
-  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  lol = log --graph --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short --all
   mup = merge upstream/master
         
 [color]
@@ -42,6 +41,12 @@
 	excludesfile = /Users/sjungling/.gitignore_global
 [difftool]
 	prompt = false
+[push]
+  # Push current branch even if you've never pushed it before
+  default = current
+[rerere]
+  enabled = 1
+
 [hub]
 	protocol = git
 	host = github.csuchico.edu
