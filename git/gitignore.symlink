@@ -54,3 +54,4 @@ pickle-email-*.html
 database.yml
 .powrc
 .rvmrc
+.rbenv-version

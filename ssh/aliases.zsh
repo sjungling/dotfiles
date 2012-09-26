@@ -13,14 +13,10 @@ alias casd="ssh cas@eapp-cas-dev.csuchico.edu"
 alias cascade="ssh cascade@cascade.csuchico.edu"
 
 # Current Portal
-alias up1="ssh portal@portal1.csuchico.edu"
-alias up2="ssh portal@portal2.csuchico.edu"
-alias up3="ssh portal@portal3.csuchico.edu"
-
-# uPortal 4.x
-alias nup1="ssh portal@eapp-portal1.csuchico.edu"
-alias nup2="ssh portal@eapp-portal2.csuchico.edu"
-alias nup3="ssh portal@eapp-portal3.csuchico.edu"
+alias up1="ssh portal@eapp-portal1.csuchico.edu"
+alias up2="ssh portal@eapp-portal2.csuchico.edu"
+alias up3="ssh portal@eapp-portal3.csuchico.edu"
+alias up4="ssh portal@eapp-portal4.csuchico.edu"
 
 # Confluence
 alias wiki="ssh wiki@eapp-wiki.csuchico.edu"

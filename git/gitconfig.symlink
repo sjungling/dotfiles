@@ -38,7 +38,7 @@
         token = TOKEN
 [core]
 	quotepath = false
-	excludesfile = $HOME/.gitignore_global
+	excludesfile = ~/.gitignore
 [difftool]
 	prompt = false
 [push]
@@ -48,5 +48,7 @@
   enabled = 1
 
 [hub]
-	protocol = git
+	protocol = https
 	host = github.csuchico.edu
+[git-tmbundle]
+	gitx-path = /usr/local/bin/gitx
