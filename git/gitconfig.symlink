@@ -1,6 +1,6 @@
 [user]
 	name = Scott Jungling
-	email = sjungling@csuchico.edu
+	email = scott.jungling@gmail.com
 [apply]
         whitespace = nowarn
 [alias]
@@ -49,6 +49,5 @@
 
 [hub]
 	protocol = https
-	host = github.csuchico.edu
 [git-tmbundle]
 	gitx-path = /usr/local/bin/gitx
