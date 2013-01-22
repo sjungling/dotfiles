@@ -1,6 +1,6 @@
 [user]
 	name = Scott Jungling
-	email = scott.jungling@gmail.com
+	email = scott.jungling@build.com
 [apply]
         whitespace = nowarn
 [alias]
@@ -12,7 +12,6 @@
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
   lol = log --graph --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short --all
   mup = merge upstream/master
-        
 [color]
   branch = auto
   diff = auto
@@ -39,6 +38,8 @@
 [core]
 	quotepath = false
 	excludesfile = ~/.gitignore
+	autocrlf = input
+	editor = mate -w
 [difftool]
 	prompt = false
 [push]
@@ -49,5 +50,7 @@
 
 [hub]
 	protocol = https
-[git-tmbundle]
-	gitx-path = /usr/local/bin/gitx
+[credential]
+	helper = osxkeychain
+[ui]
+	color = true
