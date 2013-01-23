@@ -1,0 +1,1 @@
+alias aprestart="sudo apachectl restart"
