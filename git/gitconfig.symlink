@@ -32,9 +32,6 @@
 [merge]
   tool = opendiff
 [format]
-[github]
-        user = sjungling
-        token = TOKEN
 [core]
 	quotepath = false
 	excludesfile = ~/.gitignore
@@ -47,7 +44,6 @@
   default = current
 [rerere]
   enabled = 1
-
 [hub]
 	protocol = https
 [credential]
