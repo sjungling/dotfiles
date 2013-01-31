@@ -59,6 +59,7 @@ PROMPT_COMMAND=prompt_func
 export PS1="[\u@\h:\w]$YELLOW\$(PROMPT_COMMAND)$GREEN\$ "
 
 export DOTFILES=$HOME/.dotfiles
+export HISTFILESIZE=100000
 
 for config_file in $DOTFILES/**/*.*sh; do
    source $config_file

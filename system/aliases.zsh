@@ -1,7 +1,10 @@
-alias ll='/bin/ls -alGph'
+alias ll='/bin/ls -AflGph'
 alias m.="mate ."
 alias m="mate"
 alias flush='dscacheutil -flushcache'
 alias scratch="cd ~/Documents/Scratch"
 alias work="cd ~/Work "
 alias git=hub
+alias ..="cd ../"
+alias ...="cd ../../"
+alias cfw="coffee -c -b -l -w ."
