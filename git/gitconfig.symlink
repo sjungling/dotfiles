@@ -2,7 +2,7 @@
 	name = Scott Jungling
 	email = scott.jungling@build.com
 [apply]
-        whitespace = nowarn
+	whitespace = nowarn
 [alias]
   co = checkout
   st = status
