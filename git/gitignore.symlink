@@ -56,3 +56,19 @@ database.yml
 .rvmrc
 .rbenv-version
 rails.png
+
+# Build Stuff #
+###############
+config/SolrConfig.xml
+config/config.xml.cfm
+config/database.cfm
+ht.access
+httpd-*-idstore.conf
+.DS_Store
+.project
+assets/css/*.css
+assets/css/**/*.css
+
+# Chrome WebDev #
+#################
+.allow-devtools-edit

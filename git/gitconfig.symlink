@@ -34,7 +34,7 @@
 	quotepath = false
 	excludesfile = /Users/s_jungling/.gitignore
 	autocrlf = input
-	editor = mate -w
+	editor = subl -n -w
 [push]
   # Push current branch even if you've never pushed it before
   default = current
@@ -65,3 +65,5 @@
 [mergetool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
+[branch]
+	autosetuprebase = always
