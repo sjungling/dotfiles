@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+while [[ "$1" != "" ]]; do 
+	if [[ -f $1 ]]; then
+		sass-convert -F scss -T scss -i $1
+		echo "SCSSS converting $1"
+	else
+		echo "Could not find: $1"
+	fi
+	shift
+done

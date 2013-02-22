@@ -1,0 +1,43 @@
+#!/usr/bin/env ruby
+CONFIG_PATH="/etc/apache2/other"
+
+def disable_servers
+  system("find #{CONFIG_PATH} -name '*.conf' -exec mv {} {}.disabled \\;")
+end
+
+def enable_server(server)
+  system("mv #{CONFIG_PATH}/#{server}.conf.disabled #{CONFIG_PATH}/#{server}.conf")
+end
+
+def restart_apache
+  system('apachectl restart')
+end
+
+case ARGV[0]
+when "new"
+  disable_servers
+  enable_server("new.build")
+  restart_apache
+when "current"
+  disable_servers
+  enable_server("build")
+  restart_apache
+when "dps"
+  disable_servers
+  enable_server("dps")
+  restart_apache
+when "mobile"
+  disable_servers
+  enable_server("mobile")
+  restart_apache
+else
+  STDOUT.puts <<-EOF
+Switch - Makes it easy to bounce back and forth between loading current and new Build Apache confs
+
+Usage:
+  sudo switch new
+  sudo switch current
+EOF
+end
+
+
