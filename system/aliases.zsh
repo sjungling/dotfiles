@@ -1,6 +1,8 @@
 alias ll='/bin/ls -AflGph'
 alias m.="mate ."
 alias m="mate"
+alias s.="subl ."
+alias s="subl"
 alias flush='dscacheutil -flushcache'
 alias scratch="cd ~/Documents/Scratch"
 alias work="cd ~/Work "

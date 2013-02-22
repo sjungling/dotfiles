@@ -68,6 +68,8 @@ httpd-*-idstore.conf
 .project
 assets/css/*.css
 assets/css/**/*.css
+uploads.xml
+javalib/
 
 # Chrome WebDev #
 #################
