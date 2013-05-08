@@ -70,6 +70,7 @@ assets/css/*.css
 assets/css/**/*.css
 uploads.xml
 javalib/
+.classpath
 
 # Chrome WebDev #
 #################

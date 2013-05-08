@@ -13,31 +13,32 @@ def restart_apache
   system('apachectl restart')
 end
 
+def reload_app
+  system('curl -s -I "http://local.build.com/?resetApp=1"')
+end
+
+disable_servers
 case ARGV[0]
 when "new"
-  disable_servers
   enable_server("new.build")
-  restart_apache
 when "current"
-  disable_servers
   enable_server("build")
-  restart_apache
 when "dps"
-  disable_servers
   enable_server("dps")
-  restart_apache
 when "mobile"
-  disable_servers
   enable_server("mobile")
-  restart_apache
+when "omc"
+  enable_server("omc")
+when "mmc"
+  enable_server("mmc")
 else
   STDOUT.puts <<-EOF
 Switch - Makes it easy to bounce back and forth between loading current and new Build Apache confs
 
 Usage:
-  sudo switch new
+  sudo switch [current|new|dps|modbile|omc]
   sudo switch current
 EOF
 end
-
-
+restart_apache
+reload_app
