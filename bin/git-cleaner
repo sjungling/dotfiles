@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+for BRANCH in $(git branch --merged | grep -v "*")
+do
+	git branch -d $BRANCH
+done
+
+git remote prune origin

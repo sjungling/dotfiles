@@ -75,3 +75,9 @@ javalib/
 # Chrome WebDev #
 #################
 .allow-devtools-edit
+
+# Grunt #
+#########
+Gruntfile.js
+node_modules/
+package.js*

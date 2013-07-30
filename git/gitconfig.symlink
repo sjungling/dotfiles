@@ -17,6 +17,10 @@
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
   ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
   theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+  rc = rebase --continue
+  rs = rebase --skip
+  ra = rebase --abort
+  pr = pull-request
 [color]
   branch = auto
   diff = auto
@@ -38,7 +42,7 @@
 [core]
   quotepath = false
   excludesfile = /Users/s_jungling/.gitignore
-  autocrlf = input
+	autocrlf = input
   editor = subl -n -w
 [push]
   # Push current branch even if you've never pushed it before
@@ -55,6 +59,9 @@
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
   tool = Kaleidoscope
+	algorithm = patience
+	context = 5
+	wordRegex = [A-z0-9_]+|[^[:space:]]
 [difftool]
   prompt = false
 [mergetool "Kaleidoscope"]

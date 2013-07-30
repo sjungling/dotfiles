@@ -36,7 +36,7 @@ else
 Switch - Makes it easy to bounce back and forth between loading current and new Build Apache confs
 
 Usage:
-  sudo switch [current|new|dps|modbile|omc]
+  sudo switch [current|new|dps|mobile|omc]
   sudo switch current
 EOF
 end
