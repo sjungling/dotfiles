@@ -1,4 +1,5 @@
-alias "reload!"='source ~/.bashrc'
-alias "cb"="pbcopy"
-alias "corig"="find . -name '*.orig' -delete"
-alias "cfclean"="echo build|ant;cfrestart"
+alias reload!="source ~/.bashrc"
+alias cb="pbcopy"
+alias corig="find . -name '*.orig' -delete"
+alias loadDep="rm ./javalib/*; `which ant` loadDependencies"
+alias docwatch="bundle exec jekyll serve --watch"

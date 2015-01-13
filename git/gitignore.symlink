@@ -1,6 +1,5 @@
 # Compiled source #
 ###################
-*.com
 *.class
 *.dll
 *.exe
@@ -59,25 +58,6 @@ rails.png
 
 # Build Stuff #
 ###############
-config/SolrConfig.xml
-config/config.xml.cfm
-config/database.cfm
-ht.access
-httpd-*-idstore.conf
-.DS_Store
-.project
-assets/css/*.css
-assets/css/**/*.css
-uploads.xml
-javalib/
-.classpath
-
-# Chrome WebDev #
-#################
-.allow-devtools-edit
-
-# Grunt #
-#########
-Gruntfile.js
-node_modules/
-package.js*
+sonar/
+satellite/
+.idea/

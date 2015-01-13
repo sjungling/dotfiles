@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+git ma
+git checkout master
+git pull
+git cr origin/$1
+sonar-runner -Dproject.settings=sonar-project-JS.properties &&  open ./sonar-js/issues-report/issues-report.html
