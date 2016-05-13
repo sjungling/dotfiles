@@ -54,7 +54,7 @@
 [hub]
   protocol = https
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 [ui]
   color = true
 [difftool "Kaleidoscope"]
@@ -75,7 +75,7 @@
   tool = Kaleidoscope
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Users/s_jungling/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -86,3 +86,7 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[init]
+	templatedir = ~/.dotfiles/git/hooks
+[commit]
+	gpgsign = true

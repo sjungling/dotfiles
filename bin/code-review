@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-git ma
+git merge --abort
+git reset --hard
 git checkout master
 git pull
-git cr origin/$1
+git merge --no-commit --no-ff origin/$1
 sonar-runner -Dproject.settings=sonar-project-JS.properties &&  open ./sonar-js/issues-report/issues-report.html

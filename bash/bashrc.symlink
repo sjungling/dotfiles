@@ -68,3 +68,6 @@ done
 for config_file in $DOTFILES/**/completion.sh; do
    source $config_file
 done
+
+export NVM_DIR="/Users/scott.jungling/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
